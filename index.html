@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Paiement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Réglez votre commande</h1>
+        <form action="https://secure.vanillapay.com/checkout" method="post">
+            <input type="hidden" name="client_id" value="410_5dce10cshh0cs0kwo0o440448g8c8sk8gsgswkss8oowg4cg8c">
+            <input type="hidden" name="client_secret" value="dearuy5y0m8gwc844cgo0o484g0sccwowccos0sgkk08woo0c">
+            <input type="hidden" name="amount" value="10.00">
+            <input type="hidden" name="currency" value="USD">
+            <input type="hidden" name="return_url" value="https://votresite.github.io/merci">
+            
+            <label for="email">Adresse e-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Payer maintenant</button>
+        </form>
+    </div>
+</body>
+</html>
